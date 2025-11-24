@@ -1,0 +1,33 @@
+wp-admin/
+wp-includes/
+wp-content/*
+!wp-content/themes/
+!wp-content/plugins/
+.htaccess
+index.php
+license.txt
+readme.html
+wp-*.php
+xmlrpc.php
+
+# Logs
+*.log
+*.tmp
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+
+# Sistem files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.bak
+
+# All node_modules
+**/node_modules/
