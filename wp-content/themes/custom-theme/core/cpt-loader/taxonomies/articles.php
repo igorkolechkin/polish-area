@@ -1,26 +1,28 @@
 <?php
 $args = [
-	'post_type' => ['article_cat'],
+	'post_type' => ['exercises'],
 	'args'      => [
-		'labels'  => [
-			'name'              => 'Category',
-			'singular_name'     => 'Categories',
+		'hierarchical' => true,
+		'labels'       => [
+			'name'              => 'Categories',
+			'singular_name'     => 'Category',
 			'search_items'      => 'Search Categories',
 			'all_items'         => 'All Categories',
-			'view_item '        => 'View Category',
+			'view_item'         => 'View Category',
 			'parent_item'       => 'Parent Category',
 			'parent_item_colon' => 'Parent Category:',
 			'edit_item'         => 'Edit Category',
 			'update_item'       => 'Update Category',
-			'add_new_item'      => 'Add new Category',
-			'new_item_name'     => 'New Category name',
+			'add_new_item'      => 'Add New Category',
+			'new_item_name'     => 'New Category Name',
 			'menu_name'         => 'Categories',
 		],
-		'rewrite' => [
-			'slug'       => 'articles',
-			'with_front' => false
-		]
+		'show_in_rest' => true,
+		'rewrite'      => [
+			'slug'       => 'exercise-category',
+			'with_front' => false,
+		],
 	]
 ];
 
-register_taxonomy('article_cat', $args['post_type'], $args);
+register_taxonomy('exercises_cat', $args['post_type'], $args['args']);

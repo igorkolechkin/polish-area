@@ -5,22 +5,22 @@ $args = [
 	'public'       => true,
 	'show_in_rest' => true,
 	'labels'       => [
-		'name'               => 'Статья',
-		'singular_name'      => 'Статья',
-		'add_new'            => 'Добавить новую Статью',
-		'add_new_item'       => 'Добавить новую Статью',
-		'edit_item'          => 'Исправить Статью',
-		'new_item'           => 'Новая Статья',
-		'view_item'          => 'Обзор Статьи',
-		'search_items'       => 'Поиск Статьи',
-		'not_found'          => 'Не найдена Статья',
-		'not_found_in_trash' => 'Нет статья в корзине',
+		'name'               => 'Exercise',
+		'singular_name'      => 'Exercise',
+		'add_new'            => 'Add New',
+		'add_new_item'       => 'Added new Exercise',
+		'edit_item'          => 'Change Exercise',
+		'new_item'           => 'New Exercise',
+		'view_item'          => 'View Exercise',
+		'search_items'       => 'Search Exercises',
+		'not_found'          => 'No Exercises found',
+		'not_found_in_trash' => 'No Exercises found in Trash',
 		'parent_item_colon'  => '',
-		'menu_name'          => 'Статьи'
+		'menu_name'          => 'Exercises',
 	],
-	'rewrite'     => ['slug' => 'articles', 'with_front' => false],
+	'rewrite'     => ['slug' => 'exercises', 'with_front' => false],
 	'supports'    => ['title', 'editor', 'thumbnail', 'excerpt', 'custom-fields', 'page-attributes', 'post-formats'],
-	'taxonomies'  => ['article_cat']
+	'taxonomies'  => ['exercises_cat']
 ];
 
-register_post_type('articles', $args);
+register_post_type('exercises', $args);
